@@ -1,0 +1,43 @@
+! YT - Remove unwanted popups and annoyances
+youtube.com##.YtdTalkToRecsFlowRendererHost:has-text(What hobbies are you interested in developing?)
+youtube.com##tp-yt-paper-dialog.ytd-popup-container:has-text(/following Premium|Choose all that apply|Become a member|Free trial|How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature|Terms apply/)
+youtube.com##ytd-video-quality-promo-renderer, ytd-mealbar-promo-renderer, tp-yt-iron-overlay-backdrop.opened
+youtube.com###cinematics.ytd-watch-flexy:remove()
+ 
+! YT - Remove Shorts on all pages + irrelevant search results
+www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"], .ytGridShelfViewModelHost, .ytd-search ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-rich-section-renderer, ytm-rich-shelf-renderer, ytm-search ytm-shelf-renderer, ytm-reel-shelf-renderer, ytm-rich-section-renderer, ytm-pivot-bar-item-renderer:has(> .pivot-shorts):style(display: none !important)
+www.youtube.com##.style-scope[page-subtype='channels'] ytd-shelf-renderer, .style-scope[page-subtype='channels'] ytm-shelf-renderer:style(display: block !important)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer [overlay-style="SHORTS"]:upward(ytd-rich-item-renderer)
+www.youtube.com##[is-search] ytd-shelf-renderer.ytd-item-section-renderer:not(ytd-channel-renderer + ytd-shelf-renderer), ytd-horizontal-card-list-renderer.ytd-item-section-renderer:not(:first-child), ytd-exploratory-results-renderer.ytd-item-section-renderer
+
+! YT - Cleaning up the watch sidebar (including 'shorts' related)
+youtube.com###related ytd-compact-video-renderer
+youtube.com###related ytd-compact-playlist-renderer
+youtube.com###related ytd-compact-radio-renderer
+youtube.com###related ytd-compact-movie-renderer
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="#shorts"]))
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="#Shorts"]))
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="#short"]))
+youtube.com###related ytd-compact-video-renderer:has(#video-title:is([title*="#Short"]))
+youtube.com##ytd-watch-flexy .ytd-rich-grid-renderer, ytd-watch-flexy .ytd-reel-shelf-renderer
+
+! YT - Remove filter categories on home, search and playlist pages
+youtube.com##[page-subtype="home"] ytd-feed-filter-chip-bar-renderer.style-scope.ytd-rich-grid-renderer
+youtube.com###chip-bar.style-scope.ytd-search-header-renderer
+youtube.com##ytd-search-header-renderer .yt-spec-button-shape-next--size-m:style(flex-direction: row-reverse !important)
+youtube.com##ytd-search-header-renderer .yt-spec-button-shape-next--size-m.yt-spec-button-shape-next--icon-trailing .yt-spec-button-shape-next__icon:style(margin-left: -6px !important; margin-right: 6px !important)
+youtube.com##ytd-item-section-renderer.style-scope.ytd-section-list-renderer[page-subtype="playlist"] > #header.ytd-item-section-renderer > ytd-feed-filter-chip-bar-renderer
+
+! YT - Remove more unwanted elements
+youtube.com###clarify-box, ytd-watch-flexy #clarify-box
+youtube.com##ytd-download-button-renderer
+||youtube.com/complete/search
+
+! 4 Videos Per Row
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
+
+! Remove Country Code and Voice Search
+www.youtube.com###country-code
+www.youtube.com###voice-search-button
