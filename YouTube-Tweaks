@@ -43,3 +43,6 @@ www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !
 ! Remove Country Code and Voice Search
 www.youtube.com###country-code
 www.youtube.com###voice-search-button
+
+! Remove thanks button
+www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2)
