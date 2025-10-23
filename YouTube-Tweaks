@@ -46,3 +46,6 @@ www.youtube.com###voice-search-button
 
 ! Remove thanks button
 www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2)
+
+! Bugfix
+www.youtube.com###content-section
