@@ -37,8 +37,8 @@ youtube.com###clarify-box, ytd-watch-flexy #clarify-box
 youtube.com##ytd-download-button-renderer
 ||youtube.com/complete/search
 
-! 4 Videos Per Row
-www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 4 !important;)
+! 5 Videos Per Row
+www.youtube.com##ytd-rich-grid-renderer:style(--ytd-rich-grid-items-per-row: 5 !important;)
 
 ! Remove Country Code and Voice Search
 www.youtube.com###country-code
