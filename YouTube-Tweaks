@@ -5,6 +5,12 @@ youtube.com##.YtdTalkToRecsFlowRendererHost:has-text(What hobbies are you intere
 youtube.com##tp-yt-paper-dialog.ytd-popup-container:has-text(/following Premium|Choose all that apply|Become a member|Free trial|How are your|How interested|Live TV|Wish videos|background play|better TV|cable box|cable reimagined|hidden fees|of YouTube TV|on YouTube TV|unlimited DVR|with YouTube TV|without the ads|try this feature|Terms apply/)
 youtube.com##ytd-video-quality-promo-renderer, ytd-mealbar-promo-renderer, tp-yt-iron-overlay-backdrop.opened
 youtube.com###cinematics.ytd-watch-flexy:remove()
+youtube.com##ytd-action-companion-ad-renderer, ytd-display-ad-renderer, ytd-video-masthead-ad-advertiser-info-renderer, ytd-video-masthead-ad-primary-video-renderer, ytd-in-feed-ad-layout-renderer, ytd-ad-slot-renderer, yt-about-this-ad-renderer, yt-mealbar-promo-renderer, ytd-ad-slot-renderer, ytd-in-feed-ad-layout-renderer, .ytd-video-masthead-ad-v3-renderer, div#root.style-scope.ytd-display-ad-renderer.yt-simple-endpoint, div#sparkles-container.style-scope.ytd-promoted-sparkles-web-renderer, div#main-container.style-scope.ytd-promoted-video-renderer, div#player-ads.style-scope.ytd-watch-flexy, ad-slot-renderer, ytm-promoted-sparkles-web-renderer, masthead-ad, #masthead-ad, ytd-video-quality-promo-renderer, #yt-lang-alert-container, .YtmPaidContentOverlayHost, .ytd-primetime-promo-renderer, ytd-brand-video-singleton-renderer, #yt-feedback, #yt-hitchhiker-feedback
+youtube.com###upsell-dialog-text > a[href*="sign"]:upward(body > * > *)
+youtube.com##.opened:not(.ytcp-bulk-actions):remove()
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_animated_actions, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_animated_like, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_animated_like_lazy_load, false)
  
 ! YT - Remove Shorts on all pages + irrelevant search results
 www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"], .ytGridShelfViewModelHost, .ytd-search ytd-shelf-renderer, ytd-reel-shelf-renderer, ytd-rich-section-renderer, ytm-rich-shelf-renderer, ytm-search ytm-shelf-renderer, ytm-reel-shelf-renderer, ytm-rich-section-renderer, ytm-pivot-bar-item-renderer:has(> .pivot-shorts):style(display: none !important)
