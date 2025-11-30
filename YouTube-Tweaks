@@ -56,5 +56,6 @@ www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2)
 ! Disable AI Video Summary
 youtube.com###expandable-metadata:has-text("AI-generated video summary")
 
-! Bugfix
-www.youtube.com###content-section
+!Remove Chat
+www.youtube.com/live_chat$domain=www.youtube.com,subdocument
+www.youtube.com###chat
