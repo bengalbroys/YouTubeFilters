@@ -58,7 +58,7 @@ youtube.com###expandable-metadata:has-text("AI-generated video summary")
 
 !Remove Chat
 www.youtube.com/live_chat$domain=www.youtube.com,subdocument
+www.youtube.com###chat
 
 !Bugfix
 www.youtube.com##div.style-scope.ytd-channel-renderer
-www.youtube.com###chat
