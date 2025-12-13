@@ -79,3 +79,6 @@ youtube.com##.ytp-delhi-modern .ytp-chrome-controls .ytp-right-controls:style(ba
 
 ! Moves Thumbnail Line closer to the Playback line
 youtube.com##.ytp-tooltip.ytp-bottom.ytp-tooltip-progress-bar-style.ytp-preview:style(top: 450px !important)
+
+!Bugfix
+www.youtube.com##div.style-scope.ytd-channel-renderer
