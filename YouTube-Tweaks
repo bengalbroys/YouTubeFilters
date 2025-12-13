@@ -56,5 +56,26 @@ www.youtube.com##yt-button-view-model.ytd-menu-renderer:nth-of-type(2)
 ! Disable AI Video Summary
 youtube.com###expandable-metadata:has-text("AI-generated video summary")
 
-!Bugfix
-www.youtube.com##div.style-scope.ytd-channel-renderer
+! Reduces height of Playback line
+youtube.com##.ytp-delhi-modern.ytp-big-mode:not(.ytp-xsmall-width-mode) .ytp-progress-bar-container:style(bottom: 55px !important)
+
+! Reduces placement of Buttons
+youtube.com##.ytp-delhi-modern.ytp-big-mode:not(.ytp-xsmall-width-mode) .ytp-chrome-bottom:style(height: 76px !important) 
+
+! Removes on Hover effect on Pause/Play button
+youtube.com##.ytp-delhi-modern .ytp-play-button:hover::after, .ytp-delhi-modern.ytp-big-mode .ytp-play-button:hover::after:style(background-color: transparent !important)
+
+! Removes on Hover effect on Volume button
+youtube.com##.ytp-delhi-modern.ytp-delhi-horizontal-volume-controls .ytp-volume-area:hover::after:style(background-color: transparent !important)
+
+! Removes on Hover effect on Time Stamp
+youtube.com##.ytp-delhi-modern .ytp-time-wrapper:not(.ytp-miniplayer-ui *)::after:style(background: transparent !important)
+
+! Removes on Hover effect on Right-side buttons
+youtube.com##.ytp-delhi-modern .ytp-chrome-controls .ytp-right-controls .ytp-button::before:style(background-color: transparent !important)
+
+! Removes Background on the Right-side buttons
+youtube.com##.ytp-delhi-modern .ytp-chrome-controls .ytp-right-controls:style(background: transparent !important)
+
+! Moves Thumbnail Line closer to the Playback line
+youtube.com##.ytp-tooltip.ytp-bottom.ytp-tooltip-progress-bar-style.ytp-preview:style(top: 450px !important)
